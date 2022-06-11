@@ -1,0 +1,46 @@
+[
+  [
+    {
+      "fileNumber": 4,
+      "bytesToAdd": "0x15C"
+    },
+    {
+      "fileNumber": 7,
+      "bytesToAdd": "0x200"
+    },
+    {
+      "fileNumber": 8,
+      "bytesToAdd": "0x100"
+    },
+    {
+      "fileNumber": 9,
+      "bytesToAdd": "0x100"
+    },
+    {
+      "fileNumber": 13,
+      "bytesToAdd": "0x400"
+    }
+  ],
+  [
+    {
+      "fileNumber": 0,
+      "bytesToAdd": "0x53"
+    },
+    {
+      "fileNumber": 1,
+      "bytesToAdd": "0x100"
+    },
+    {
+      "fileNumber": 2,
+      "bytesToAdd": "0x100"
+    },
+    {
+      "fileNumber": 3,
+      "bytesToAdd": "0x100"
+    },
+    {
+      "fileNumber": 4,
+      "bytesToAdd": "0x200"
+    }
+  ]
+]

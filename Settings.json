@@ -1,0 +1,1084 @@
+{
+  "spiroVersion": 3,
+  "files": {
+    "00.dka": ".\\disks\\a\\00.dka",
+    "01.dka": ".\\disks\\a\\01.dka",
+    "02.dka": ".\\disks\\a\\02.dka",
+    "03.dka": ".\\disks\\a\\03.dka",
+    "04.dka": ".\\disks\\a\\04.dka",
+    "05.dka": ".\\disks\\a\\05.dka",
+    "06.dka": ".\\disks\\a\\06.dka",
+    "07.dka": ".\\disks\\a\\07.dka",
+    "08.dka": ".\\disks\\a\\08.dka",
+    "09.dka": ".\\disks\\a\\09.dka",
+    "10.dka": ".\\disks\\a\\10.dka",
+    "11.dka": ".\\disks\\a\\11.dka",
+    "12.dka": ".\\disks\\a\\12.dka",
+    "13.dka": ".\\disks\\a\\13.dka",
+    "00.dkb": ".\\disks\\b\\00.dkb",
+    "01.dkb": ".\\disks\\b\\01.dkb",
+    "02.dkb": ".\\disks\\b\\02.dkb",
+    "03.dkb": ".\\disks\\b\\03.dkb",
+    "04.dkb": ".\\disks\\b\\04.dkb",
+    "05.dkb": ".\\disks\\b\\05.dkb",
+    "06.dkb": ".\\disks\\b\\06.dkb",
+    "07.dkb": ".\\disks\\b\\07.dkb",
+    "08.dkb": ".\\disks\\b\\08.dkb",
+    "09.dkb": ".\\disks\\b\\09.dkb"
+  },
+  "scripts": {
+    "scriptPath": ".\\script\\script.json",
+    "original": true,
+    "comment": true,
+    "new": true,
+    "bytes": false,
+    "menu": true,
+    "proof": false
+  },
+  "misc": {
+    "blankOutTextDataAfterRead": true,
+    "blankOutByte": "0x62",
+	"includedPointerMetadata": true,
+	"getFileToWritePointerFromPointersField": true
+  },
+  "scriptManager": {
+    "writeScript": "",
+    "displayReplace": [
+      {
+        "find": "\\[Heart\\]",
+        "replace": "♥"
+      },
+      {
+        "find": "\\[LINE\\]",
+        "replace": "\r\n"
+      },
+      {
+        "find": "\\[...\\]",
+        "replace": "..."
+      },
+      {
+        "find": "\\[NAME\\]",
+        "replaceOriginal": "忠",
+        "replaceNew": "NINTEN"
+      },
+      {
+        "find": "\\[KATAKANA\\]",
+        "replace": ""
+      },
+      {
+        "find": "\\(PAGE\\)|\\[NEXT\\]|\\[STOP\\]",
+        "replace": "\r\n---------------\r\n"
+      },
+      {
+        "find": "\\(.*?\\)",
+        "replace": ""
+      },
+      {
+        "find": "\\[.*?\\]",
+        "replace": ""
+      }
+    ]
+  },
+  "pointers": {
+    "read": {
+      "0  Dictionary": {
+        "file": "04.dka",
+        "pointerFormat": {
+          "addresses": [
+            "0x0"
+          ],
+          "pcDifference": "+0x0",
+          "addressConversion": "none",
+          "entryNumber": "0x3F",
+          "pointerType": "none",
+          "pointerGrouping": "single",
+          "pointerLength": 0,
+          "placementStrategy": "inOrder",
+		  "subentryKeyPrefix": "dictionary"
+        },
+        "renderFormat": {
+          "dialogueReadType": "hasDelimiter",
+          "delimiters": [
+            "[STOP]"
+          ],
+          "renderType": "dictionary",
+          "dictionaryInteractions": [
+            "CHR"
+          ],
+          "isDictionary": true,
+          "chrFile": ".\\tables\\CHR",
+          "dictionaryFile": ".\\tables\\Dictionary",
+          "mirrorBlankDictionaryEntries": false,
+          "pixelsPerLine": 0,
+          "autoLineBreak": "None",
+          "squishyTextFile": ".\\tables\\FindAndReplace",
+          "squishyTextFileUseregex": true
+        }
+      },
+      "1  08.dka (Dialogue #1)": {
+        "file": "08.dka",
+        "pointerFormat": {
+          "addresses": [
+            "0x834"
+          ],
+          "pcDifference": "-0xB200",
+          "addressConversion": "none",
+          "entryNumber": "0x19",
+          "pointerType": "littleEndian",
+          "pointerLength": 2,
+          "placementStrategy": "bestfit",
+		  "subentryKeyPrefix": "dialogue1"
+        },
+        "renderFormat": {
+          "dialogueReadType": "hasDelimiter",
+          "delimiters": [
+            "[STOP]"
+          ],
+          "renderType": "Dictionary",
+          "dictionaryInteractions": [
+            "CHR",
+            "Dictionary"
+          ],
+          "isDictionary": false,
+          "chrFile": ".\\tables\\CHR",
+          "dictionaryFile": ".\\tables\\Dictionary",
+          "mirrorBlankDictionaryEntries": false,
+          "pixelsPerLine": 176,
+          "autoLineBreak": "tokimekiMiho",
+          "squishyTextFile": ".\\tables\\FindAndReplace",
+          "squishyTextFileUseregex": true
+        }
+      },
+      "2  09.dka (Dialogue #2)": {
+        "file": "09.dka",
+        "pointerFormat": {
+          "addresses": [
+            "0xCD2"
+          ],
+          "pcDifference": "-0xB200",
+          "addressConversion": "None",
+          "entryNumber": "0x14",
+          "pointerType": "LittleEndian",
+          "pointerLength": 2,
+          "placementStrategy": "Bestfit",
+		  "subentryKeyPrefix": "dialogue2"
+        },
+        "renderFormat": {
+          "dialogueReadType": "HasDelimiter",
+          "delimiters": [
+            "[STOP]"
+          ],
+          "renderType": "Dictionary",
+          "dictionaryInteractions": [
+            "CHR",
+            "Dictionary"
+          ],
+          "isDictionary": false,
+          "chrFile": ".\\tables\\CHR",
+          "dictionaryFile": ".\\tables\\Dictionary",
+          "mirrorBlankDictionaryEntries": false,
+          "pixelsPerLine": 176,
+          "autoLineBreak": "TokimekiMiho",
+          "squishyTextFile": ".\\tables\\FindAndReplace",
+          "squishyTextFileUseregex": true
+        }
+      },
+      "3  0d.dka (Miho message)": {
+        "file": "13.dka",
+        "pointerFormat": {
+          "addresses": [
+            "0x100"
+          ],
+          "pcDifference": "0x0",
+          "addressConversion": "None",
+          "entryNumber": "0x1",
+          "pointerType": "None",
+          "pointerGrouping": "Single",
+          "pointerLength": 2,
+          "placementStrategy": "Bestfit",
+		  "subentryKeyPrefix": "mihoMessage"
+        },
+        "renderFormat": {
+          "dialogueReadType": "HasDelimiter",
+          "delimiters": [
+            "[STOP]"
+          ],
+          "renderType": "Dictionary",
+          "dictionaryInteractions": [
+            "CHR"
+          ],
+          "isDictionary": false,
+          "chrFile": ".\\tables\\CHR - Miho Message",
+          "mirrorBlankDictionaryEntries": false,
+          "pixelsPerLine": 168,
+          "autoLineBreak": "TokimekiMihoMessage",
+          "squishyTextFile": ".\\tables\\FindAndReplace",
+          "squishyTextFileUseregex": true
+        }
+      },
+      "4  00.dkb": {
+        "file": "00.dkb",
+        "pointerFormat": {
+          "addresses": [
+            "0xEB7"
+          ],
+          "pcDifference": "-0xB200",
+          "addressConversion": "None",
+          "entryNumber": "0x54",
+          "pointerType": "LittleEndian",
+          "pointerLength": 2,
+          "placementStrategy": "Bestfit",
+		  "subentryKeyPrefix": "dialogue3"
+        },
+        "renderFormat": {
+          "dialogueReadType": "HasDelimiter",
+          "delimiters": [
+            "[STOP]"
+          ],
+          "renderType": "Dictionary",
+          "dictionaryInteractions": [
+            "CHR",
+            "Dictionary"
+          ],
+          "isDictionary": false,
+          "chrFile": ".\\tables\\CHR",
+          "dictionaryFile": ".\\tables\\Dictionary",
+          "mirrorBlankDictionaryEntries": false,
+          "pixelsPerLine": 176,
+          "autoLineBreak": "TokimekiMiho",
+          "squishyTextFile": ".\\tables\\FindAndReplace",
+          "squishyTextFileUseregex": true
+        }
+      },
+      "5  01.dkb": {
+        "file": "01.dkb",
+        "pointerFormat": {
+          "addresses": [
+            "0x140E"
+          ],
+          "pcDifference": "-0xB200",
+          "addressConversion": "None",
+          "entryNumber": "0x40",
+          "pointerType": "LittleEndian",
+          "pointerLength": 2,
+          "placementStrategy": "Bestfit",
+		  "subentryKeyPrefix": "dialogue4"
+        },
+        "renderFormat": {
+          "dialogueReadType": "HasDelimiter",
+          "delimiters": [
+            "[STOP]"
+          ],
+          "renderType": "Dictionary",
+          "dictionaryInteractions": [
+            "CHR",
+            "Dictionary"
+          ],
+          "isDictionary": false,
+          "chrFile": ".\\tables\\CHR",
+          "dictionaryFile": ".\\tables\\Dictionary",
+          "mirrorBlankDictionaryEntries": false,
+          "pixelsPerLine": 176,
+          "autoLineBreak": "TokimekiMiho",
+          "squishyTextFile": ".\\tables\\FindAndReplace",
+          "squishyTextFileUseregex": true
+        }
+      },
+      "6  02.dkb": {
+        "file": "02.dkb",
+        "pointerFormat": {
+          "addresses": [
+            "0x00000E2E"
+          ],
+          "pcDifference": "-0xB200",
+          "addressConversion": "None",
+          "entryNumber": "0x58",
+          "pointerType": "LittleEndian",
+          "pointerLength": 2,
+          "placementStrategy": "Bestfit",
+		  "subentryKeyPrefix": "dialogue5"
+        },
+        "renderFormat": {
+          "dialogueReadType": "HasDelimiter",
+          "delimiters": [
+            "[STOP]"
+          ],
+          "renderType": "Dictionary",
+          "dictionaryInteractions": [
+            "CHR",
+            "Dictionary"
+          ],
+          "isDictionary": false,
+          "chrFile": ".\\tables\\CHR",
+          "dictionaryFile": ".\\tables\\Dictionary",
+          "mirrorBlankDictionaryEntries": false,
+          "pixelsPerLine": 176,
+          "autoLineBreak": "TokimekiMiho",
+          "squishyTextFile": ".\\tables\\FindAndReplace",
+          "squishyTextFileUseregex": true
+        }
+      },
+      "7  03.dkb": {
+        "file": "03.dkb",
+        "pointerFormat": {
+          "addresses": [
+            "0x0000069E"
+          ],
+          "pcDifference": "-0xB200",
+          "addressConversion": "None",
+          "entryNumber": "0x1D",
+          "pointerType": "LittleEndian",
+          "pointerLength": 2,
+          "placementStrategy": "Bestfit",
+		  "subentryKeyPrefix": "dialogue6"
+        },
+        "renderFormat": {
+          "dialogueReadType": "HasDelimiter",
+          "delimiters": [
+            "[STOP]"
+          ],
+          "renderType": "Dictionary",
+          "dictionaryInteractions": [
+            "CHR",
+            "Dictionary"
+          ],
+          "isDictionary": false,
+          "chrFile": ".\\tables\\CHR",
+          "dictionaryFile": ".\\tables\\Dictionary",
+          "mirrorBlankDictionaryEntries": false,
+          "pixelsPerLine": 176,
+          "autoLineBreak": "TokimekiMiho",
+          "squishyTextFile": ".\\tables\\FindAndReplace",
+          "squishyTextFileUseregex": true
+        }
+      },
+      "8  04.dkb": {
+        "file": "04.dkb",
+        "pointerFormat": {
+          "addresses": [
+            "0x0000109E"
+          ],
+          "pcDifference": "-0xB200",
+          "addressConversion": "None",
+          "entryNumber": "0x3C",
+          "pointerType": "LittleEndian",
+          "pointerLength": 2,
+          "placementStrategy": "Bestfit",
+		  "subentryKeyPrefix": "dialogue7"
+        },
+        "renderFormat": {
+          "dialogueReadType": "HasDelimiter",
+          "delimiters": [
+            "[STOP]"
+          ],
+          "renderType": "Dictionary",
+          "dictionaryInteractions": [
+            "CHR",
+            "Dictionary"
+          ],
+          "isDictionary": false,
+          "chrFile": ".\\tables\\CHR",
+          "dictionaryFile": ".\\tables\\Dictionary",
+          "mirrorBlankDictionaryEntries": false,
+          "pixelsPerLine": 176,
+          "autoLineBreak": "TokimekiMiho",
+          "squishyTextFile": ".\\tables\\FindAndReplace",
+          "squishyTextFileUseregex": true
+        }
+      },
+      "Miscellaneous text #1": {
+        "file": "03.dka",
+        "pointerFormat": {
+          "addresses": [
+            "0x00000211",
+            "0x0000025C",
+            "0x000007A0"
+          ],
+          "pcDifference": "-0x61F8",
+          "addressConversion": "None",
+          "entryNumber": "0x1",
+          "pointerType": "Custom",
+          "pointerLength": 7,
+          "placementStrategy": "Bestfit",
+          "customPointerFormat": [
+            "A9",
+            "(B0)",
+            "8D",
+            "90",
+            "B1",
+            "A9",
+            "(B1)"
+          ],
+		  "subentryKeyPrefix": "dialogue8"
+        },
+        "renderFormat": {
+          "dialogueReadType": "HasDelimiter",
+          "delimiters": [
+            "[STOP]"
+          ],
+          "renderType": "Dictionary",
+          "dictionaryInteractions": [
+            "CHR",
+            "Dictionary"
+          ],
+          "isDictionary": false,
+          "chrFile": ".\\tables\\CHR",
+          "dictionaryFile": ".\\tables\\Dictionary",
+          "mirrorBlankDictionaryEntries": false,
+          "pixelsPerLine": 176,
+          "autoLineBreak": "TokimekiMiho",
+          "squishyTextFile": ".\\tables\\FindAndReplace",
+          "squishyTextFileUseregex": true
+        }
+      },
+      "10  Item Text": {
+        "pointerFormat": {
+          "file": "03.dka",
+		  "comment": "Also, 0x0000299B, 0x00002833",
+          "addresses": [ "0x00002AEC" ],
+          "pcDifference": "-0xA100",
+          "addressConversion": "none",
+          "entryNumber": "0x8",
+          "pointerType": "custom",
+          "pointerLength": 6,
+          "placementStrategy": "inOrder",
+          "customPointerFormat": [ "A9", "(B0)", "85", "02", "A9", "(B1)" ],
+		  "subentryKeyPrefix": "itemText2",
+		  "pointerGrouping": "single"
+        },
+        "renderFormat": {
+          "file": "02.dka",
+          "dialogueReadType": "lengthAtBeginningOfLine",
+          "lengthAtBeginningOfLineDifference": "+0x1",
+          "delimiters": [ "[STOP]" ],
+          "delimiterCount": 2,
+          "renderType": "lengthAtBeginningOfLine",
+          "dictionaryInteractions": [
+            "CHR",
+            "Dictionary"
+          ],
+          "isDictionary": false,
+          "chrFile": ".\\tables\\CHR",
+          "dictionaryFile": ".\\tables\\Dictionary",
+          "mirrorBlankDictionaryEntries": false,
+          "pixelsPerLine": 176,
+          "autoLineBreak": "none",
+		  "delimiterCount": 2,
+          "squishyTextFile": ".\\tables\\FindAndReplace",
+          "squishyTextFileUseregex": true
+        }
+      },
+      "11  Save Text": {
+        "file": "03.dka",
+        "pointerFormat": {
+          "addresses": [
+            "0x000022AD"
+          ],
+          "pcDifference": "-0x61F8",
+          "addressConversion": "None",
+          "entryNumber": "0x1",
+          "pointerType": "Custom",
+          "pointerLength": 7,
+          "placementStrategy": "Bestfit",
+          "customPointerFormat": [
+            "A9",
+            "(B0)",
+            "8D",
+            "90",
+            "B1",
+            "A9",
+            "(B1)"
+          ],
+		  "subentryKeyPrefix": "saveText"
+        },
+        "renderFormat": {
+          "dialogueReadType": "HasDelimiter",
+          "delimiters": [
+            "[STOP]"
+          ],
+          "renderType": "Dictionary",
+          "dictionaryInteractions": [
+            "CHR",
+            "Dictionary"
+          ],
+          "isDictionary": false,
+          "chrFile": ".\\tables\\CHR",
+          "dictionaryFile": ".\\tables\\Dictionary",
+          "mirrorBlankDictionaryEntries": false,
+          "pixelsPerLine": 176,
+          "autoLineBreak": "TokimekiMiho",
+          "squishyTextFile": ".\\tables\\FindAndReplace",
+          "squishyTextFileUseregex": true
+        }
+      },
+      "12  02.dka (Secret message)": {
+        "file": "02.dka",
+        "pointerFormat": {
+          "addresses": [
+            "0x00001D9C"
+          ],
+          "pcDifference": "-0xA100",
+          "addressConversion": "None",
+          "entryNumber": "0x1",
+          "pointerType": "Custom",
+          "pointerLength": 6,
+          "placementStrategy": "Bestfit",
+          "customPointerFormat": [
+            "A9",
+            "(B0)",
+            "85",
+            "9A",
+            "A9",
+            "(B1)"
+          ],
+		  "subentryKeyPrefix": "secretMessage"
+        },
+        "renderFormat": {
+          "dialogueReadType": "HasDelimiter",
+          "delimiters": [
+            "[STOP]"
+          ],
+          "renderType": "Dictionary",
+          "dictionaryInteractions": [
+            "CHR",
+            "Dictionary"
+          ],
+          "isDictionary": false,
+          "chrFile": ".\\tables\\CHR - Miho Message",
+          "dictionaryFile": ".\\tables\\Dictionary",
+          "mirrorBlankDictionaryEntries": false,
+          "pixelsPerLine": 176,
+          "autoLineBreak": "TokimekiMihoMessage",
+          "squishyTextFile": ".\\tables\\FindAndReplace",
+          "squishyTextFileUseregex": true
+        }
+      },
+      "13 03.dka (Ending)": {
+        "pointerFormat": {
+          "file": "03.dka",
+          "addresses": [ "0x000039A1" ],
+          "pcDifference": "-0xB200",
+          "addressConversion": "None",
+          "entryNumber": "26",
+          "pointerType": "custom",
+          "pointerLength": 7,
+          "placementStrategy": "Bestfit",
+          "customPointerFormat": [ "A9", "(B0)", "8D", "32", "B5", "A9", "(B1)" ],
+		  "subentryKeyPrefix": "ending",
+          "pointerGrouping": "single"
+        },
+        "renderFormat": {
+          "file": "07.dka",
+          "dialogueReadType": "HasDelimiter",
+          "delimiters": [ "[STOP]" ],
+          "renderType": "Dictionary",
+          "dictionaryInteractions": [ "CHR", "Dictionary" ],
+          "isDictionary": false,
+          "chrFile": ".\\tables\\CHR",
+          "dictionaryFile": ".\\tables\\Dictionary",
+          "mirrorBlankDictionaryEntries": false,
+          "pixelsPerLine": 176,
+          "autoLineBreak": "none",
+          "squishyTextFile": ".\\tables\\FindAndReplace",
+          "squishyTextFileUseregex": true
+        }
+      },
+      "14 Credits": {
+        "pointerFormat": {
+          "file": "03.dka",
+          "addresses": [ "0x00003997" ],
+		  "customPointerFormat": [ "A9", "(B0)", "8D", "EA", "B3", "A9", "(B1)", "8D", "EB", "B3" ],
+          "pcDifference": "-0xB200",
+          "addressConversion": "none",
+          "entryNumber": "27",
+          "pointerType": "custom",
+          "pointerGrouping": "single",
+          "pointerLength": 10,
+          "storeOutOfOrderToSaveSpace": false,
+		  "subentryKeyPrefix": "07dka"
+        },
+        "renderFormat": {
+		  "file": "07.dka",
+          "dialogueReadType": "HasDelimiter",
+          "delimiters": [  "[STOP]"  ],
+          "renderType": "Dictionary",
+          "dictionaryInteractions": [  "CHR" ],
+          "isDictionary": false,
+          "chrFile": ".\\tables\\CHR",
+          "mirrorBlankDictionaryEntries": false,
+          "pixelsPerLine": 176,
+          "autoLineBreak": "none",
+          "squishyTextFile": ".\\tables\\FindAndReplace",
+          "squishyTextFileUseregex": true
+        }
+      },
+      "Miscellaneous text #2": {
+        "pointerFormat": {
+          "file": "03.dka",
+          "addresses": [
+            "0x000015AF",
+			"0x000015C0"
+          ],
+          "pcDifference": "-0xA100",
+          "addressConversion": "None",
+          "entryNumber": "0x1",
+          "pointerType": "Custom",
+          "pointerLength": 7,
+          "placementStrategy": "Bestfit",
+          "customPointerFormat": [
+            "A9",
+            "(B0)",
+            "8D",
+            "90",
+            "B1",
+            "A9",
+            "(B1)"
+          ],
+		  "subentryKeyPrefix": "misc2"
+        },
+        "renderFormat": {
+          "file": "02.dka",
+          "dialogueReadType": "HasDelimiter",
+          "delimiters": [
+            "[STOP]"
+          ],
+          "renderType": "Dictionary",
+          "dictionaryInteractions": [
+            "CHR",
+            "Dictionary"
+          ],
+          "isDictionary": false,
+          "chrFile": ".\\tables\\CHR",
+          "dictionaryFile": ".\\tables\\Dictionary",
+          "mirrorBlankDictionaryEntries": false,
+          "pixelsPerLine": 176,
+          "autoLineBreak": "TokimekiMiho",
+          "squishyTextFile": ".\\tables\\FindAndReplace",
+          "squishyTextFileUseregex": true
+        }
+      },
+      "Miscellaneous text #3": {
+        "file": "03.dka",
+        "pointerFormat": {
+          "addresses": [
+            "0x00000ADB"
+          ],
+          "pcDifference": "-0x61F8",
+          "addressConversion": "None",
+          "entryNumber": "0x1",
+          "pointerType": "Custom",
+          "pointerLength": 7,
+          "placementStrategy": "Bestfit",
+          "customPointerFormat": [
+            "A9",
+            "(B0)",
+            "8D",
+            "90",
+            "B1",
+            "A9",
+            "(B1)"
+          ],
+		  "subentryKeyPrefix": "misc3"
+        },
+        "renderFormat": {
+          "dialogueReadType": "HasDelimiter",
+          "delimiters": [
+            "[STOP]"
+          ],
+          "renderType": "Dictionary",
+          "dictionaryInteractions": [
+            "CHR",
+            "Dictionary"
+          ],
+          "isDictionary": false,
+          "chrFile": ".\\tables\\CHR",
+          "dictionaryFile": ".\\tables\\Dictionary",
+          "mirrorBlankDictionaryEntries": false,
+          "pixelsPerLine": 176,
+          "autoLineBreak": "TokimekiMiho",
+          "squishyTextFile": ".\\tables\\FindAndReplace",
+          "squishyTextFileUseregex": true
+        }
+      },
+      "Miscellaneous text #4": {
+        "file": "03.dka",
+        "pointerFormat": {
+          "addresses": [
+            "0x0000225B"
+          ],
+          "pcDifference": "-0x61F8",
+          "addressConversion": "None",
+          "entryNumber": "0x1",
+          "pointerType": "Custom",
+          "pointerLength": 7,
+          "placementStrategy": "Bestfit",
+          "customPointerFormat": [
+            "A9",
+            "(B0)",
+            "8D",
+            "90",
+            "B1",
+            "A9",
+            "(B1)"
+          ],
+		  "subentryKeyPrefix": "misc4"
+        },
+        "renderFormat": {
+          "dialogueReadType": "HasDelimiter",
+          "delimiters": [
+            "[STOP]"
+          ],
+          "renderType": "Dictionary",
+          "dictionaryInteractions": [
+            "CHR",
+            "Dictionary"
+          ],
+          "isDictionary": false,
+          "chrFile": ".\\tables\\CHR",
+          "dictionaryFile": ".\\tables\\Dictionary",
+          "mirrorBlankDictionaryEntries": false,
+          "pixelsPerLine": 176,
+          "autoLineBreak": "TokimekiMiho",
+          "squishyTextFile": ".\\tables\\FindAndReplace",
+          "squishyTextFileUseregex": true
+        }
+      }
+    },
+    "write": {
+      "0  Dictionary": {
+        "file": "04.dka",
+        "pointerFormat": {
+          "addresses": [
+            "0x0"
+          ],
+          "pcDifference": "+0x0",
+          "addressConversion": "None",
+          "entryNumber": "0xCD",
+          "pointerType": "None",
+          "pointerGrouping": "Single",
+          "pointerLength": 0,
+          "placementStrategy": "inOrder",
+		  "subentryKeyPrefix": "dictionary"
+        },
+        "renderFormat": {
+          "dialogueReadType": "HasDelimiter",
+          "delimiters": [
+            "[STOP]"
+          ],
+          "renderType": "Dictionary",
+          "dictionaryInteractions": [
+            "CHR"
+          ],
+          "isDictionary": true,
+          "chrFile": ".\\tables\\CHR",
+          "dictionaryFile": ".\\tables\\Dictionary",
+          "mirrorBlankDictionaryEntries": false,
+          "pixelsPerLine": 0,
+          "autoLineBreak": "None",
+          "placementStrategy": "Bestfit"
+        }
+      },
+	  "13 03.dka (Ending)": {
+        "pointerFormat": {
+          "file": "03.dka",
+          "addresses": [ "0x000039A1" ],
+          "pcDifference": "-0xB200",
+          "addressConversion": "None",
+          "entryNumber": "0x1",
+          "pointerType": "custom",
+          "pointerLength": 7,
+          "placementStrategy": "Bestfit",
+          "customPointerFormat": [ "A9", "(B0)", "8D", "32", "B5", "A9", "(B1)" ],
+		  "subentryKeyPrefix": "ending"
+        },
+        "renderFormat": {
+          "file": "07.dka",
+          "dialogueReadType": "HasDelimiter",
+          "delimiters": [ "[STOP]" ],
+          "renderType": "Dictionary",
+          "dictionaryInteractions": [ "CHR", "Dictionary" ],
+          "isDictionary": false,
+          "chrFile": ".\\tables\\CHR",
+          "dictionaryFile": ".\\tables\\Dictionary - Ending",
+          "mirrorBlankDictionaryEntries": false,
+          "pixelsPerLine": 176,
+          "autoLineBreak": "none",
+          "delimiterCount": "25",
+          "squishyTextFile": ".\\tables\\FindAndReplace",
+          "squishyTextFileUseregex": true
+        }
+      },
+    }
+  },
+  "write": {
+    "writeableRange": {
+      "04.dka Dictionary": {
+        "file": "04.dka",
+        "startAddress": "0x0",
+        "size": "0x2a7"
+      },
+      "08.dka": {
+        "file": "08.dka",
+        "startAddress": "0x866",
+        "size": "0x246"
+      },
+      "08.dka (Added Space)": {
+        "file": "08.dka",
+        "startAddress": "0xD80",
+        "size": "0x100"
+      },
+      "09.dka": {
+        "file": "09.dka",
+        "startAddress": "0xCFA",
+        "size": "0x25D"
+      },
+      "09.dka (Added Space)": {
+        "file": "09.dka",
+        "startAddress": "0x1B00",
+        "size": "0x100"
+      },
+      "13.dka (Miho message)": {
+        "file": "13.dka",
+        "startAddress": "0x000",
+        "size": "0x6CB"
+      },
+      "00.dkb": {
+        "file": "00.dkb",
+        "startAddress": "0xF5F",
+        "size": "0x13C7"
+      },
+      "00.dkb (Added Space)": {
+        "file": "00.dkb",
+        "startAddress": "0x2D9D",
+        "size": "0x53"
+      },
+      "01.dkb": {
+        "file": "01.dkb",
+        "startAddress": "0x0000148E",
+        "size": "0xF30"
+      },
+      "01.dkb (Added Space)": {
+        "file": "01.dkb",
+        "startAddress": "0x2AF0",
+        "size": "0x100"
+      },
+      "02.dkb": {
+        "file": "02.dkb",
+        "startAddress": "0x00000EDE",
+        "size": "0xD0F"
+      },
+      "02.dkb (Added Space)": {
+        "file": "02.dkb",
+        "startAddress": "0x22CD",
+        "size": "0x100"
+      },
+      "03.dkb": {
+        "file": "03.dkb",
+        "startAddress": "0x000006D8",
+        "size": "0x58A"
+      },
+      "03.dkb (Added Space)": {
+        "file": "03.dkb",
+        "startAddress": "0x134F",
+        "size": "0x100"
+      },
+      "04.dkb": {
+        "file": "04.dkb",
+        "startAddress": "0x00001116",
+        "size": "0xB16"
+      },
+      "04.dkb (Added Space)": {
+        "file": "04.dkb",
+        "startAddress": "0x266D",
+        "size": "0x200"
+      },
+      "03.dka Misc #1-1": {
+        "file": "03.dka",
+        "startAddress": "0x0000044E",
+        "size": "0x9"
+      },
+	  "03.dka Misc #1-2": {
+        "file": "03.dka",
+        "startAddress": "0x00000458",
+        "size": "0x9"
+      },
+	  "03.dka Misc #1-3": {
+        "file": "03.dka",
+        "startAddress": "0x00000465",
+        "size": "0xE"
+      },
+      "03.dka Misc #2": {
+        "file": "03.dka",
+        "startAddress": "0x00000A0D",
+        "size": "0x9"
+      },
+      "03.dka Misc #3": {
+        "file": "03.dka",
+        "startAddress": "0x000021CB",
+        "size": "0x13"
+      },
+	  "02.dka Misc #2-1": {
+        "file": "02.dka",
+        "startAddress": "0x000003c2",
+        "size": "0xD"
+      },
+	  "02.dka Misc #2-2": {
+        "file": "02.dka",
+        "startAddress": "0x0003CF",
+        "size": "0x0C"
+      },
+      "Item Text": {
+        "comment": "There's text before this. Not sure if used.",
+        "file": "02.dka",
+        "startAddress": "0x00000423",
+        "size": "0x216"
+      },
+      "02.dka Miho Secret Message": {
+        "file": "02.dka",
+        "startAddress": "0x00003626",
+        "size": "0x99"
+      },
+      "07.dka Credits": {
+        "file": "07.dka",
+        "startAddress": "0x1EC",
+        "size": "0x2C3"
+      },
+      "07.dka Credits (Added Space)": {
+        "file": "07.dka",
+        "startAddress": "0x900",
+        "size": "0x200"
+      }
+    },
+    "writeRegion": [
+      {
+        "entryOwners": [
+          "0  Dictionary"
+        ],
+        "writeableAddressRanges": [
+          "04.dka Dictionary"
+        ]
+      },
+      {
+        "entryOwners": [
+          "1  08.dka (Dialogue #1)"
+        ],
+        "writeableAddressRanges": [
+          "08.dka",
+          "08.dka (Added Space)"
+        ]
+      },
+      {
+        "entryOwners": [
+          "2  09.dka (Dialogue #2)"
+        ],
+        "writeableAddressRanges": [
+          "09.dka",
+          "09.dka (Added Space)"
+        ]
+      },
+      {
+        "entryOwners": [
+          "3  0d.dka (Miho message)"
+        ],
+        "writeableAddressRanges": [
+          "13.dka (Miho message)"
+        ]
+      },
+      {
+        "entryOwners": [
+          "4  00.dkb"
+        ],
+        "writeableAddressRanges": [
+          "00.dkb",
+          "00.dkb (Added Space)"
+        ]
+      },
+      {
+        "entryOwners": [
+          "5  01.dkb"
+        ],
+        "writeableAddressRanges": [
+          "01.dkb",
+          "01.dkb (Added Space)"
+        ]
+      },
+      {
+        "entryOwners": [
+          "6  02.dkb"
+        ],
+        "writeableAddressRanges": [
+          "02.dkb",
+          "02.dkb (Added Space)"
+        ]
+      },
+      {
+        "entryOwners": [
+          "7  03.dkb"
+        ],
+        "writeableAddressRanges": [
+          "03.dkb",
+          "03.dkb (Added Space)"
+        ]
+      },
+      {
+        "entryOwners": [
+          "8  04.dkb"
+        ],
+        "writeableAddressRanges": [
+          "04.dkb",
+          "04.dkb (Added Space)"
+        ]
+      },
+      {
+        "entryOwners": [
+		  "Miscellaneous text #1",
+          "Miscellaneous text #3",
+		  "Miscellaneous text #4",
+          "11  Save Text"
+        ],
+        "writeableAddressRanges": [
+          "03.dka Misc #1-1",
+          "03.dka Misc #1-2",
+          "03.dka Misc #1-3",
+          "03.dka Misc #2",
+          "03.dka Misc #3"
+        ]
+      },
+	  {
+        "entryOwners": [
+          "Miscellaneous text #2"
+        ],
+        "writeableAddressRanges": [
+          "02.dka Misc #2-1",
+          "02.dka Misc #2-2"
+        ]
+      },
+      {
+        "entryOwners": [
+          "10  Item Text"
+        ],
+        "writeableAddressRanges": [
+          "Item Text"
+        ]
+      },
+      {
+        "entryOwners": [
+          "12  02.dka (Secret message)"
+        ],
+        "writeableAddressRanges": [
+          "02.dka Miho Secret Message"
+        ]
+      },
+      {
+        "entryOwners": [
+          "14 Credits",
+          "13 03.dka (Ending)",
+        ],
+        "writeableAddressRanges": [
+          "07.dka Credits",
+          "07.dka Credits (Added Space)"
+        ]
+      }
+    ]
+  }
+}
