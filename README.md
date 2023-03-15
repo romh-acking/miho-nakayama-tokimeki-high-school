@@ -83,9 +83,9 @@ The development team is willing to provide guidance and assistance for other tra
 * Hubz
     * Manual scan from Gaming Alexandria
 * Eien Ni Hen
-    * On-spot translations
+    * Spot translations
 * Tom
-    * On-spot translation
+    * Spot translation
 * Disch
     * Guidance for address conversion handling
 
